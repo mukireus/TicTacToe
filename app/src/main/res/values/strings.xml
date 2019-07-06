@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="start">Başla</string>
+    <string name="settings">Ayarlar</string>
+    <string name="info">Hakkında</string>
+    <string name="try_again">Tekrar Deneyin</string>
+</resources>
