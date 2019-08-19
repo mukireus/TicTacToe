@@ -1,120 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorBackground"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorBackground"
+  tools:context=".GameScreenActivity">
+
+  <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameScreenActivity">
+    android:gravity="center">
+
+    <ImageView
+      android:layout_width="340dp"
+      android:layout_height="480dp"
+      android:layout_marginBottom="50dp"
+      android:src="@drawable/tictac"
+      tools:ignore="ContentDescription,NotSibling"/>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="77dp">
 
-        <ImageView
-            android:layout_width="340dp"
-            android:layout_height="480dp"
-            android:layout_marginBottom="50dp"
-            android:src="@drawable/tictac"
-            tools:ignore="ContentDescription,NotSibling" />
+      <Button
+        android:id="@+id/btnOneOne"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:background="@color/colorBackground"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="77dp">
+      <Button
+        android:id="@+id/btnOneTwo"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="113dp"
+        android:background="@color/colorBackground"/>
 
-            <Button
-                android:id="@+id/btnOneOne"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnOneTwo"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="113dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnOneThree"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="226dp"
-                android:background="@color/colorBackground" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="186dp">
-
-            <Button
-                android:id="@+id/btnTwoOne"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnTwoTwo"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="113dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnTwoThree"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="226dp"
-                android:background="@color/colorBackground" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="295dp">
-
-            <Button
-                android:id="@+id/btnThreeOne"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnThreeTwo"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="113dp"
-                android:background="@color/colorBackground" />
-
-            <Button
-                android:id="@+id/btnThreeThree"
-                android:layout_width="111dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="226dp"
-                android:background="@color/colorBackground" />
-
-        </RelativeLayout>
+      <Button
+        android:id="@+id/btnOneThree"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="226dp"
+        android:background="@color/colorBackground"/>
 
     </RelativeLayout>
 
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="186dp">
 
-    <Button
-        android:id="@+id/btnTryAgain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:background="@color/colorBackground"
-        android:gravity="center"
-        android:text="@string/try_again"
-        android:textAllCaps="false"
-        android:textColor="@color/colorButtonTextGreen"
-        android:textSize="20sp" />
+      <Button
+        android:id="@+id/btnTwoOne"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:background="@color/colorBackground"/>
 
+      <Button
+        android:id="@+id/btnTwoTwo"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="113dp"
+        android:background="@color/colorBackground"/>
+
+      <Button
+        android:id="@+id/btnTwoThree"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="226dp"
+        android:background="@color/colorBackground"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="295dp">
+
+      <Button
+        android:id="@+id/btnThreeOne"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:background="@color/colorBackground"/>
+
+      <Button
+        android:id="@+id/btnThreeTwo"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="113dp"
+        android:background="@color/colorBackground"/>
+
+      <Button
+        android:id="@+id/btnThreeThree"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="226dp"
+        android:background="@color/colorBackground"/>
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+
+  <Button
+    android:id="@+id/btnTryAgain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="100dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:text="@string/try_again"
+    android:textAllCaps="false"
+    android:textColor="@color/colorButtonTextGreen"
+    android:textSize="20sp"/>
 
 
 </RelativeLayout>
